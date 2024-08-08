@@ -67,7 +67,7 @@ function ReviewColumn({
       className={cn("animate-marquee space-y-8 py-4", className)}
       style={{ "--marquee-duration": duration } as React.CSSProperties}
     >
-      //! In each column we show the individual reviews
+      {/* //! In each column we show the individual reviews */}
       {reviews.concat(reviews).map((imgSrc, reviewIndex) => (
         <Review
           key={reviewIndex}
@@ -165,6 +165,7 @@ export function Reviews() {
         aria-hidden="true"
         src="/what-people-are-buying.png"
         className="absolute select-none hidden xl:block -left-32 top-1/3"
+        alt="what people are buying"
       />
 
       <ReviewGrid />
